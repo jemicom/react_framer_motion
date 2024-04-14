@@ -1,14 +1,20 @@
 import './App.css';
-import FramerAccordion from './motions/FramerAccordion';
-import FramerSlider from './motions/FramerSlider';
-import FramerTab from './motions/FramerTab';
+import {
+  Header, 
+  Work,
+  Skills,
+  Aboutme
+} from './compnents' 
  
+import SectionTemp from './layouts/SectionTemp';
+
 function App() {
   return (
     <div className="App">
-       {/* <FramerTab /> */}
-       {/* <FramerAccordion /> */}
-       <FramerSlider />
+        <SectionTemp><Header /></SectionTemp>
+        <SectionTemp><Work /></SectionTemp>
+        <SectionTemp><Skills /></SectionTemp>
+        <SectionTemp><Aboutme /></SectionTemp> 
     </div>
   );
 }
