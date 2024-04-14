@@ -1,11 +1,13 @@
 import React from 'react' 
+import MotionWrap from '../layouts/MotionWrap'
+import FramerAccordion from './FramerAccordion'
 
 const Work = () => {
   return (
     <div>
-      Work
+      <FramerAccordion />
     </div>
   )
 }
 
-export default Work
+export default MotionWrap(Work, "work")

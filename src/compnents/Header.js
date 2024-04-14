@@ -1,11 +1,13 @@
 import React from 'react' 
+import MotionWrap from '../layouts/MotionWrap'
+import FramerTab from './FramerTab'
 
 const Header = () => {
   return (
     <div>
-      Header
+       <FramerTab />
     </div>
   )
 }
 
-export default Header
+export default MotionWrap(Header, "header")

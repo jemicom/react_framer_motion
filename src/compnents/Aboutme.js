@@ -1,4 +1,5 @@
 import React from 'react' 
+import MotionWrap from '../layouts/MotionWrap'
 
 const Aboutme = () => {
   return (
@@ -8,4 +9,4 @@ const Aboutme = () => {
   )
 }
 
-export default Aboutme
+export default MotionWrap(Aboutme, "aboutme")
